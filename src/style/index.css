@@ -1,0 +1,48 @@
+@import url("./homepage.css");
+@import url("./login.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* flex properties */
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.mx-4 {
+  margin: 0px 4px;
+}
+
+/* dots for text */
+.dots {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.sidenav-custom-width {
+  width: 240px !important;
+  max-width: 240px !important;
+  flex: 0px 0px 0px 0px !important;
+}
+@media (max-width: 991px) and (min-width: 685px) {
+  .ant-layout-sider {
+    width: 220px !important;
+    max-width: 220px !important;
+    flex: 0px 0px 0px 0px !important;
+  }
+}
+@media (max-width: 684px) and (min-width: 320px) {
+  .ant-layout-sider {
+    width: 200px !important;
+    max-width: 200px !important;
+    flex: 0 0 0 200px !important;
+  }
+}
